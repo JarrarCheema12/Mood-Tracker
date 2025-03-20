@@ -22,3 +22,6 @@ CSS – Styling for a modern and responsive UI
 
 JavaScript – Logic for storing, retrieving, and displaying moods
 
+![Screenshot (54)](https://github.com/user-attachments/assets/28147195-b450-49dc-a436-cabe128d62d9)
+
+Netlify link: mood-tracker-1212.netlify.app
