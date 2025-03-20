@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mood-Tracker</title>
+    <style>
+       body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: white;
+}
+
+.mood-main {
+    text-align: center;
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    width: 90%;
+}
+
+h1 {
+    font-size: 24px;
+    color: #333;
+}
+
+.mood {
+    font-size: 30px;
+    margin: 10px;
+    padding: 15px;
+    border: none;
+    background: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border-radius: 50%;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+.mood:hover {
+    transform: scale(1.1);
+    background-color: #f0f0f0;
+}
+
+#clear-record {
+    font-size: 16px;
+    padding: 10px 15px;
+    background: crimson;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-bottom: 15px;
+    margin-left: 20px;
+    transition: all 0.3s ease;
+}
+
+#clear-record:hover {
+    background: darkred;
+}
+
+#listofmoods {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+    text-align: left;
+}
+
+#listofmoods li {
+    font-size: 18px;
+    padding: 10px;
+    background: #f4f4f4;
+    color: black;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 600px) {
+    .mood {
+        font-size: 24px;
+        padding: 10px;
+    }
+
+    #listofmoods li {
+        font-size: 16px;
+        padding: 8px;
+    }
+}
+
+    </style>
+</head>
+<body>
+    <div class="mood-main">
+        <h1>Select Your Mood</h1>
+        
+        <button class="mood" data-mood="😀">😀</button>
+        <button class="mood" data-mood="😢">😢</button>
+        <button class="mood" data-mood="😐">😐</button>
+        <button class="mood" data-mood="🤩">🤩</button>
+        <button class="mood" data-mood="😡">😡</button>
+        <button id="clear-record">clear history</button>
+        <h1>History</h1>
+        <ul id="listofmoods"></ul>
+    </div>
+    <script src="mood_tracker.js"></script>
+</body>
+</html>
